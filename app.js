@@ -5,7 +5,7 @@ var fs = require('fs');
 var package = require('./package.json')
 var exec = require('child_process').execFile;
 const {Octokit} = require("@octokit/core");
-const octokit2 = new Octokit({auth: `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`});
+const octokit2 = new Octokit({auth: `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`});
 
 
 (async function () {
