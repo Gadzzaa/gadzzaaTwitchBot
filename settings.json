@@ -26,5 +26,7 @@
 
   "debug" : false // Default: false | I do not recommend you enable this unless you know what you are doing
 
+  "me?" : true // Default : true | It applies /me on the output message
+
 
 }

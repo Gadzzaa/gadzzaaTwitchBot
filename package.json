@@ -1,11 +1,14 @@
 {
   "name": "gadzzaaTwitchBot",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "dateReleased": "08.10.2021",
+  "bugfixes": true,
   "description": "",
   "main": "app.js",
   "author": "Gadzzaa",
   "license": "ISC",
   "dependencies": {
+    "@octokit/core": "^3.5.1",
     "json-easy-strip": "^1.0.6",
     "tmi.js": "^1.8.3"
   }
