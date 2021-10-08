@@ -24,7 +24,7 @@
 
   "autoReconnect" : true, // Default: true | Enable this to auto-reconnect if network error
 
-  "debug" : false // Default: false | I do not recommend you enable this unless you know what you are doing
+  "debug" : false, // Default: false | I do not recommend you enable this unless you know what you are doing
 
   "me?" : true // Default : true | It applies /me on the output message
 
