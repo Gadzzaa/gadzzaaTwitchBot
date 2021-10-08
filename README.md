@@ -18,7 +18,7 @@ It is a simple code mainly based on [`StreamCompanion`](https://github.com/Piotr
 
 ## How to use it
 
-1) Modify package.json -- I commented on every thing that is in there so, before modifying, make sure to read the comments :D
+1) Modify settings.json -- I commented on every thing that is in there so, before modifying, make sure to read the comments :D
 2) Add two output patterns inside `StreamCompanion`, one named "np_all" and the other one named "nppp"
 3) Add your own command output inside the formating text box and put the `Save Event` to `All`. 
 
@@ -42,5 +42,5 @@ Formating : PP Values | 100% : !osu_mSSPP! pp | 99% : !osu_m99PP! pp | 98% : !os
 
 ## How to modify the commands
 
-1) Package.json ( You can rename the commands there )
+1) settings.json ( You can rename the commands there )
 2) StreamCompanion's Output Patterns ( You can modify the output there)
