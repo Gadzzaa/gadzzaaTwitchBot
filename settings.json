@@ -1,0 +1,30 @@
+{
+
+  // Twitch Settings
+
+  "twitchUser": "", // Include Twitch's Bot Name | You can also put in your account's name
+
+  "twitchAuth" : "", // Include Twitch's Bot oAuth | https://twitchapps.com/tmi/ | You can also put in your account's oAuth
+
+  "twitchChannel" : "", // Include YOUR Twitch Username here | Careful what you put in here
+
+
+  // Settings
+
+  "Prefix" : "!",  // The prefix you want to use
+
+  "Now_Playing_Command" : "np",  // The Now Playing Command  |  MAKE SURE TO CREATE IT ON STREAMCOMPANION
+
+  "Now_Playing_PP_Command" : "nppp",  // The Now Playing PP Command  |  MAKE SURE TO CREATE IT ON STREAMCOMPANION
+
+  "StreamCompanion_Path" : "",  // The path to StreamCompanion
+
+
+  // Advanced Settings
+
+  "autoReconnect" : true, // Default: true | Enable this to auto-reconnect if network error
+
+  "debug" : false // Default: false | I do not recommend you enable this unless you know what you are doing
+
+
+}
