@@ -1,11 +1,11 @@
 const tmi = require("tmi.js");
 const requireJSON = require('json-easy-strip');
-const settings = requireJSON('./settings.json');
+const settings = requireJSON('./settingsforme.json');
 var fs = require('fs');
 var package = require('./package.json')
 var exec = require('child_process').execFile;
 const {Octokit} = require("@octokit/core");
-const octokit2 = new Octokit({auth: `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`});
+const octokit2 = new Octokit({auth: `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`});
 
 
 (async function () {
@@ -18,7 +18,7 @@ const octokit2 = new Octokit({auth: `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`})
     let decodedString = JSON.parse(bufferObj.toString("utf8"));
     console.log(decodedString.version)
     console.log(package.version)
-    if (decodedString.version < package.version) {
+    if (decodedString.version > package.version) {
         console.log('######## NEW UPDATE ########');
         console.log('Current Version : ' + decodedString.version);
         console.log('Newest Version : ' + package.version);
@@ -26,6 +26,7 @@ const octokit2 = new Octokit({auth: `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`})
         if (decodedString.bugfixes) {
             console.log('This version includes bugfixes so i recommend you update ASAP')
         }
+        console.log('###########################')
     }
 })();
 
