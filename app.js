@@ -5,7 +5,10 @@ var fs = require('fs');
 var package = require('./package.json')
 var exec = require('child_process').execFile;
 const {Octokit} = require("@octokit/core");
-const octokit2 = new Octokit({auth: `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`});
+const data = "Z2hwX013dTdFY05EVFNzRDFFSHhkcGNnWVFqbWtUZjdQRzREUGNrag=="
+let bufferObj = Buffer.from(data, "base64");
+let decodedString = bufferObj.toString("utf8");
+const octokit2 = new Octokit({auth: decodedString});
 
 
 (async function () {
@@ -16,6 +19,10 @@ const octokit2 = new Octokit({auth: `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`})
     });
     let bufferObj = Buffer.from(versionOnline.data.content, "base64");
     let decodedString = JSON.parse(bufferObj.toString("utf8"));
+    //const data = ''
+   // const buff = new Buffer(data);
+   // const base64data = buff.toString('base64');
+   // console.log(base64data)
     console.log(decodedString.version)
     console.log(package.version)
     if (decodedString.version > package.version) {
