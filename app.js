@@ -1,6 +1,6 @@
 const tmi = require("tmi.js");
 const requireJSON = require('json-easy-strip');
-const settings = requireJSON('./settingsforme.json');
+const settings = requireJSON('./settings.json');
 var fs = require('fs');
 var package = require('./package.json')
 var exec = require('child_process').execFile;
